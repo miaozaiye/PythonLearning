@@ -1,0 +1,94 @@
+1、NameError：尝试访问一个未申明的变量
+>>>  v
+NameError: name 'v' is not defined
+
+2、ZeroDivisionError：除数为0
+>>> v = 1/0
+ZeroDivisionError: int division or modulo by zero
+
+3、SyntaxError：语法错误
+>>> int int
+SyntaxError: invalid syntax (<pyshell#14>, line 1)
+
+4、IndexError：索引超出范围
+>>> List = [2]
+>>> List[3]
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    List[3]
+IndexError: list index out of range
+
+5、KeyError：字典关键字不存在
+>>> Dic = {'1':'yes', '2':'no'}
+>>> Dic['3']
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    Dic['3']
+KeyError: '3'
+
+6、IOError：输入输出错误
+>>> f = open('abc')
+IOError: [Errno 2] No such file or directory: 'abc'
+
+7、AttributeError：访问未知对象属性
+>>> class Worker:
+ def Work():
+  print("I am working")
+>>> w = Worker()
+>>> w.a
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    w.a
+AttributeError: 'Worker' object has no attribute 'a'
+
+8、ValueError：数值错误
+>>> int('d')
+Traceback (most recent call last):
+  File "<pyshell#54>", line 1, in <module>
+    int('d')
+ValueError: invalid literal for int() with base 10: 'd'
+
+9、TypeError：类型错误
+>>> iStr = '22'
+>>> iVal = 22
+>>> obj = iStr + iVal;
+Traceback (most recent call last):
+  File "<pyshell#68>", line 1, in <module>
+    obj = iStr + iVal;
+TypeError: Can't convert 'int' object to str implicitly
+
+10、AssertionError：断言错误
+>>> assert 1 != 1
+Traceback (most recent call last):
+  File "<pyshell#70>", line 1, in <module>
+    assert 1 != 1
+AssertionError
+
+以上转自http://blog.csdn.net/fcoolx/article/details/4202872
+
+下面增加一些本人工作过程中遇到过的异常：
+
+11、MemoryError:内存耗尽异常
+
+12、NotImplementedError：方法没实现引起的异常
+    示例：
+1 class Base(object):
+2     def __init__(self):
+3         pass
+4
+5     def action(self):
+6         raise NotImplementedError
+定义一个类，一个接口方法action,如果直接调用action则抛NotImplementedError异常，这样做的目的通常是用来模拟接口
+
+13、LookupError：键、值不存在引发的异常
+    LookupError异常是IndexError、KeyError的基类
+   如果你不确定数据类型是字典还是列表时，可以用LookupError捕获此异常
+
+14、StandardError 标准异常。
+    除StopIteration, GeneratorExit, KeyboardInterrupt 和SystemExit外，其他异常都是StandarError的子类。
+
+
+
+  异常处理有别于错误检测：
+
+testtest
