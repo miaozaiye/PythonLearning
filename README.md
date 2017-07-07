@@ -3,7 +3,7 @@ learn python, and push codes everyday
 
 1 - 这是一个公开的Python学习小组，我们讨论交流Python知识，学习使用过程中的难点，好的开源项目。
 
-2 - 每天将自己练习的Python代码上传到群github 仓库（https://github.com/miaozaiye/PythonLearning）自己的分支，并分享到微信群里打卡。
+2 - 每天将自己练习的Python代码上传到群github 仓库（https://github.com/miaozaiye/PythonLearning） 自己的分支，并分享到微信群里打卡。
 
 2 - 分支上文件格式：程序名_作者名.py , 不用分支记录流水账，比如 2017——7——7.py ，避免之后因为无可读性可用性，合并分支的时候被拒。
 
@@ -11,7 +11,8 @@ learn python, and push codes everyday
 
 4 - 完整的程序，要有完整的注释说明，包含：程序的目的，用例。详情请看master 的code_sample.py
 
-####备注：
+-----------------------------------------------------------------------------------------------------
+备注：
 
 如何加入git:
 
