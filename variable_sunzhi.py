@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 # print absolute value of an integer:
 a=-100
 if(a>0):
@@ -33,3 +36,4 @@ b = a
 a = 'XYZ'
 print(b)
 print(a)
+
