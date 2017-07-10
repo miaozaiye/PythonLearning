@@ -1,3 +1,4 @@
+#以下为版本，以及版权说明部分
 #!/usr/bin/env python3
 # Copyright (c) 2008-11 Qtrac Ltd. All rights reserved.
 # This program or module is free software: you can redistribute it and/or
@@ -10,6 +11,8 @@
 # General Public License for more details.
 
 """
+以下为测试用例部分，可通过引入doctest来进行测试。
+
 >>> L = SortedList((5, 8, -1, 3, 4, 22))
 >>> L[2] = 18 #doctest: +IGNORE_EXCEPTION_DETAIL
 Traceback (most recent call last):
@@ -51,7 +54,9 @@ _identity = lambda x:x
 class SortedList:
 
     def __init__(self, sequence=None, key=None):
-        """Creates a SortedList that orders using < on the items,
+        """ 
+        以下为该模块的说明和测试用例部分。通过引入doctest来测试。
+        Creates a SortedList that orders using < on the items,
         or on the results of using the given key function
 
         >>> L = SortedList()
