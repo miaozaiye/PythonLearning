@@ -90,3 +90,23 @@ kw = {'d': 88, 'x': '#'}
 f2(*args, **kw)
 
 
+# 利用递归函数计算阶乘
+# N! = 1 * 2 * 3 * ... * N
+def fact(n):
+    return fact_iter(n, 1)
+
+def fact_iter(num, product):
+    if num == 1:
+        return product
+    return fact_iter(num - 1, num * product)
+
+print('fact(1) =', fact(1))
+print('fact(5) =', fact(5))
+print('fact(10) =', fact(10))
+
+L = []
+n = 1
+while n <= 99:
+    L.append(n)
+    n = n + 2
+print(L)
