@@ -1,4 +1,4 @@
-#explaination of err that user inputs
+#explanation of err that user inputs
 '''
 
  This programme is to show the chinese name of the error, it's function and it's example.
@@ -14,9 +14,6 @@ ZeroDivisionError: int division or modulo by zero
 
 import sys,os
 import optparse
-import getopt
-import gzip
-import pickle
 import xml.dom.minidom
 
 file = '/Users/Jane/Desktop/Python 全栈学习/python3 learning/lesson7/errorlist'
@@ -29,7 +26,7 @@ class err_object():
     属性：
     key: lowercase str
     name: Title str
-    explaination: 中文解释的句子
+    explanation: 中文解释的句子
     example: 实例，包括命令行，出错提示
 
     方法：
@@ -39,10 +36,10 @@ class err_object():
 
     '''
 
-    def __init__(self,key,name,explaination,example):
+    def __init__(self,key,name,explanation,example):
         self.key = key
         self.name = name
-        self.explaination = explaination
+        self.explanation = explanation
         self.example = example
 
 
@@ -55,10 +52,10 @@ def get_filelist(filename):
     example_content = ''
     errlist = {}
     a = 0
+
     chi = ''
 
     for line in fh:
-        one_err = err_object
         if a == 0:
             try:
                 if int(line.split('、')[0]):
@@ -76,18 +73,17 @@ def get_filelist(filename):
 
             else:
                 a = 0
-                one_err.key = eng.lower()
-                one_err.name = eng
-                one_err.explaination = chi
-                one_err.example = example_content
 
-                errlist[one_err.key]=[one_err.key,one_err.name,one_err.explaination,one_err.example]
+                errlist[eng.lower()]=err_object(eng.lower(),eng,chi,example_content)
+
 
                 # print('eng is{0}'.format(eng))
                 #
                 # print('err name is {0}'.format(one_err.name))
                 example_content = ''
 
+    for key in errlist:
+        print('errlist[{0}]: {1}\n{2}'.format(key,errlist[key].key,errlist[key].name))
     export_xml_dom(errlist,filename)
     return errlist
 
@@ -95,20 +91,43 @@ def get_filelist(filename):
 
 
 def export_xml_dom(errlist, filename, compress=False):
+
+    '''
+
+    xml 的格式：
+
+    <?xml> version ='1.0' encoding = 'UTF-8'
+    <root>
+    <element attribute1 = value1 attribute2 = value2 ...>
+    <sub-element>text</sub-element>
+    </element>
+
+    <element>
+    ......
+    </element>
+    </root>
+
+
+    导入导出的时候，都是基于这个格式来操作
+    '''
+
     fh = None
     dom = xml.dom.minidom.getDOMImplementation()
     tree = dom.createDocument(None,'err_object',None)
     root = tree.documentElement
+
     for err_object in errlist:
+        print('err_object is {0}:{1}'.format(err_object,errlist[err_object].name))
         element = tree.createElement('err_object')
         for attribute,value in (
-                ('key',err_object[0]),
-                ('name',err_object[1]),
-                ('explaination',err_object[2]),
-                ('example',err_object[3])
+                ('key',errlist[err_object].key),
+                ('name',errlist[err_object].name),
+                ('explanation',errlist[err_object].explanation),
+                ('example',errlist[err_object].example)
 
         ):
             element.setAttribute(attribute,value)
+            print('element name is {0}'.format(errlist[err_object].name))
         root.appendChild(element)
 
     fh = None
@@ -125,36 +144,50 @@ def export_xml_dom(errlist, filename, compress=False):
             fh.close()
 
 
+
+
 def import_xml_dom(filename):
-    fh = None
+    errlist = {}
+
+
+    def get_text(node_list):
+        text = []
+        for node in node_list:
+            if node.nodeType == node.TEXT_NODE:
+                text.append(node.data)
+        return "".join(text).strip()
+
     try:
-        fh = open(filename, "rb")
-        magic = fh.read(len(GZIP_MAGIC))
-        if magic == GZIP_MAGIC:
-            fh.close()
-            fh = gzip.open(filename, "rb")
-        else:
-            fh.seek(0)
-
-        errlist = pickle.load(fh)
+        dom = xml.dom.minidom.parse(filename)
 
 
-
-        return errlist
-    except (EnvironmentError, pickle.UnpicklingError) as err:
+    except (EnvironmentError,
+            xml.parsers.expat.ExpatError) as err:
         print("{0}: import error: {1}".format(
               os.path.basename(sys.argv[0]), err))
         return False
-    finally:
-        if fh is not None:
-            fh.close()
+
+
+    for element in dom.getElementsByTagName("err_object"):
+
+
+        try:
+            data = {}
+            for attribute in ('key', 'name', 'explanation', 'example'):
+                data[attribute] = element.getAttribute(attribute)
+
+            err_object1 = err_object(**data)
+            errlist[err_object1.key] = err_object1
+
+        except (ValueError, LookupError) as err:
+            print("{0}: import error: {1}".format(
+                  os.path.basename(sys.argv[0]), err))
+            return False
     return errlist
 
 
-
-
 def print_exp(err,filename):
-    #show the err explaination and examples
+    #show the err explanation and examples
     '''
     >>> get_err.py synta
     AssertionError:not in errlist
@@ -176,15 +209,16 @@ def print_exp(err,filename):
     assert 'err_object_list.txt','file not exist'
 
     #获取文件数据
-    err_object_list = import_pickle(filename)
+    err_object_list = import_xml_dom(filename)
+
 
 
     assert err.lower() in err_object_list,'{0} not in errlist'.format(err) # robust in lower and upper case
     err_object = err_object_list[err.lower()] # use the standard key to get right content
 
     print(
-        '{0} is {1}******以下是实例******\n{2}'.format(err_object[1],err_object[2],
-                                                  err_object[3])
+        '{0} is {1}\n ******以下是实例******\n{2}'.format(err_object.name, err_object.explanation,
+                                                  err_object.example)
     )
 
 
@@ -199,7 +233,7 @@ def main():
 
     Options:
     -h, --help         show this help message and exit
-    -e ERR, --err=ERR  get the explaination of the err
+    -e ERR, --err=ERR  get the explanation of the err
 
     >>>get_err.py -e syntaxerror
     SyntaxError is 语法错误
@@ -219,7 +253,7 @@ usage: %prog [options] infile outfile
 tell you what the err mean and its example. not sensitive on lower/upper case.""")
 
     parser.add_option("-e", "--err", dest="err",
-            help=("get the explaination of the err"))
+            help=("get the explanation of the err"))
 
     opts, args = parser.parse_args()
 
