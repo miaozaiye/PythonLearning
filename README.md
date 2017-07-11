@@ -14,7 +14,7 @@ learn python, and push codes everyday
 -----------------------------------------------------------------------------------------------------
 备注：
 
-如何加入git:
+1 - 如何加入git:
 
 1: 私信我你的github 注册邮箱，我将你加为合作者。还没有GitHub账号的朋友，请先创建账号，再私我邮箱。
 
@@ -23,5 +23,8 @@ learn python, and push codes everyday
 3: 每天Push到自己的分支上
 
 不会用Git的朋友先学一下廖雪峰的Git课程。
+
+
+2 - Python3.5 官方文档：https://docs.python.org/3.5/contents.html
 
 最后，祝大家coding愉快！
