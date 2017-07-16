@@ -15,8 +15,7 @@ class SaleItemInline(admin.TabularInline):
         if obj:
             return 0
         else:
-            return 3
-
+            :
 
 class OfferItemInline(admin.TabularInline):
     model = OfferItem
