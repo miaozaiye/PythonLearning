@@ -29,4 +29,24 @@ sudo /usr/local/mysql/support-files/mysql.server restart
 
  最后，重新安装解决，通过workbench直接修改新密码 为123456
 
+20170717:
+    
+django.db.utils.OperationalError: (1045, u"Access denied for user 'root'@'localhost' (using password: YES)")
 
+
+猜测是mis数据库没有导入成功
+需要一个动作是  mysql -uroot -proot < Install/mis.sql
+
+mis.sql文件不存在；
+
+手动创建mis数据库
+直接在workbench里面执行 mis.sql 数据表创建成功
+
+　继续在 插入 python manage.py migrate 还是失败
+
+django.db.utils.OperationalError: (1045, u"Access denied for user 'root'@'localhost' (using password: YES)")
+执行 pthon manage.py runserver 继续抱错
+
+django.db.utils.OperationalError: (1045, u"Access denied for user 'root'@'localhost' (using password: YES)")
+
+明天继续debug看是啥问题。。。
