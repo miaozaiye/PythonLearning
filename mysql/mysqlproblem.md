@@ -26,3 +26,7 @@ sudo /usr/local/mysql/support-files/mysql.server stop
 sudo /usr/local/mysql/support-files/mysql.server restart
 
  查看当前进程
+
+ 最后，重新安装解决，通过workbench直接修改新密码 为123456
+
+
