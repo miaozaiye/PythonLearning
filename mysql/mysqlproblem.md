@@ -49,4 +49,7 @@ django.db.utils.OperationalError: (1045, u"Access denied for user 'root'@'localh
 
 django.db.utils.OperationalError: (1045, u"Access denied for user 'root'@'localhost' (using password: YES)")
 
-明天继续debug看是啥问题。。。
+明天继续debug看是啥问题。。
+
+I find that i do not save that the password on the files
+
