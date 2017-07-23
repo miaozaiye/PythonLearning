@@ -1,0 +1,262 @@
+pythpnlinqiliangdeMacBook-Pro:~ linqiliang$ python
+Python 2.7.13 |Anaconda custom (x86_64)| (default, Dec 20 2016, 23:05:08) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> a = slice(
+... )
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: slice expected at least 1 arguments, got 0
+>>> a = slice
+>>> a.start
+<member 'start' of 'slice' objects>
+>>> a =slice(10,12)
+>>> a.start
+10
+>>> a.stop
+12
+>>> a=indice(1,10,2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'indice' is not defined
+>>> a=indices(1,10,2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'indices' is not defined
+>>> a.indices(5)
+(5, 5, 1)
+>>> a.indices(10)
+(10, 10, 1)
+>>> a
+slice(10, 12, None)
+>>> a.slice(1,1000)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'slice' object has no attribute 'slice'
+>>> a = slice(1,10000)
+>>> a.indices()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: indices() takes exactly one argument (0 given)
+>>> a.indices
+<built-in method indices of slice object at 0x102ebf680>
+>>> a.indices(100)
+(1, 100, 1)
+>>> from collections import Counter
+>>> with open(/Users/linqiliang/PySci/data.csv) as f:
+  File "<stdin>", line 1
+    with open(/Users/linqiliang/PySci/data.csv) as f:
+              ^
+SyntaxError: invalid syntax
+>>> with open(./Users/linqiliang/PySci/data.csv) as f:
+  File "<stdin>", line 1
+    with open(./Users/linqiliang/PySci/data.csv) as f:
+              ^
+SyntaxError: invalid syntax
+>>> with open(./PySci/data.csv) as f:
+  File "<stdin>", line 1
+    with open(./PySci/data.csv) as f:
+              ^
+SyntaxError: invalid syntax
+>>> with open(PySci/data.csv) as f:
+...   a.append(f.readline.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'PySci' is not defined
+>>> pwd
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pwd' is not defined
+>>> os.path
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'os' is not defined
+>>> import os
+>>> os.path
+<module 'posixpath' from '/Users/linqiliang/anaconda2/lib/python2.7/posixpath.pyc'>
+>>> f = "/Users/linqiliang/PySci/data.csv"
+>>> fi = open(f)
+>>> fi.readline()
+'code,name,industry,area,pe,outstanding,totals,totalAssets,liquidAssets,fixedAssets,reserved,reservedPerShare,esp,bvps,pb,timeToMarket,undp,perundp,rev,profit,gpr,npr,holders\n'
+>>> for i in fi:
+...   a.append(i.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'slice' object has no attribute 'append'
+>>> strlist =[]
+>>> for i in fi:
+... import os
+  File "<stdin>", line 2
+    import os
+         ^
+IndentationError: expected an indented block
+>>> 
+>>> strlist = fi.split(',')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'file' object has no attribute 'split'
+>>> for i in fi:
+...    strlist.append(i.split(','))
+... 
+>>> strlist
+[['603228', 'N\xe6\x99\xaf\xe6\x97\xba', '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', '\xe6\xb7\xb1\xe5\x9c\xb3', '24.91', '0.48', '4.08', '317009.59', '194374.45', '110117.42', '3928.62', '0.1', '1.004', '4.66', '7.15', '20170106', '122314.7', '3.0', '22.78', '26.67', '31.89', '17.07', '43122\n'], ['002838', 'N\xe9\x81\x93\xe6\x81\xa9', '\xe5\xa1\x91\xe6\x96\x99', '\xe5\xb1\xb1\xe4\xb8\x9c', '22.56', '0.21', '0.84', '67476.68', '40767.73', '13757.82', '9038.25', '1.08', '0.732', '7.19', '3.06', '20170106', '27768.75', '3.31', '19.03', '48.28', '25.35', '11.32', '41516\n'], ['600495', '\xe6\x99\x8b\xe8\xa5\xbf\xe8\xbd\xa6\xe8\xbd\xb4', '\xe8\xbf\x90\xe8\xbe\x93\xe8\xae\xbe\xe5\xa4\x87', '\xe5\xb1\xb1\xe8\xa5\xbf', '1351.46', '12.08', '12.08', '365096.34', '207525.92', '68221.4', '116013.51', '0.96', '0.005', '2.55', '3.26', '20040526', '53874.07', '0.45', '-48.39', '-88.94', '11.36', '0.81', '149143\n'], ['603186', '\xe5\x8d\x8e\xe6\xad\xa3\xe6\x96\xb0\xe6\x9d\x90', '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', '\xe6\xb5\x99\xe6\xb1\x9f', '14.67', '0.32', '1.29', '110635.36', '75836.61', '0.0', '0.0', '0.0', '0.526', '4.05', '2.54', '20170103', '0.0', '0.0', '25.63', '114.72', '0.0', '8.19', '30121\n']]
+>>> word_counts = Counter(strlist)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/linqiliang/anaconda2/lib/python2.7/collections.py", line 477, in __init__
+    self.update(*args, **kwds)
+  File "/Users/linqiliang/anaconda2/lib/python2.7/collections.py", line 567, in update
+    self[elem] = self_get(elem, 0) + 1
+TypeError: unhashable type: 'list'
+>>> for i in fi:
+... strlis
+  File "<stdin>", line 2
+    strlis
+         ^
+IndentationError: expected an indented block
+>>> 
+>>> for i in fi:
+... for i in fi:
+  File "<stdin>", line 2
+    for i in fi:
+      ^
+IndentationError: expected an indented block
+>>> strlist =[]
+>>> for i in fi:
+...     strlist.concat(i.split(','))
+... 
+>>> 
+>>> strlist
+[]
+>>> for i in fi:
+...     strlist = strlist.concat(i.split(','))
+... 
+>>> 
+>>> strlist
+[]
+>>> fi = open(f)
+>>> for i in fi:
+...     strlist = strlist.concat(i.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'list' object has no attribute 'concat'
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'NoneType' object has no attribute 'extend'
+>>> strlist =[]
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'NoneType' object has no attribute 'extend'
+>>> strlist =[1,]
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+... 
+>>> 
+>>> strlist
+>>> strlist
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+...     print i
+  File "<stdin>", line 3
+    print i
+          ^
+IndentationError: unindent does not match any outer indentation level
+>>> for i in fi:
+...    print i
+... 
+>>> 
+>>> fi.readline()
+''
+>>> fi = open(f)
+>>> fi
+<open file '/Users/linqiliang/PySci/data.csv', mode 'r' at 0x102e99660>
+>>> fi.readline()
+'code,name,industry,area,pe,outstanding,totals,totalAssets,liquidAssets,fixedAssets,reserved,reservedPerShare,esp,bvps,pb,timeToMarket,undp,perundp,rev,profit,gpr,npr,holders\n'
+>>> fi = open(f)
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+...     print i.split(',')
+  File "<stdin>", line 3
+    print i.split(',')
+                     ^
+IndentationError: unindent does not match any outer indentation level
+>>> for i in fi:
+...     print i.split(',')
+... 
+['code', 'name', 'industry', 'area', 'pe', 'outstanding', 'totals', 'totalAssets', 'liquidAssets', 'fixedAssets', 'reserved', 'reservedPerShare', 'esp', 'bvps', 'pb', 'timeToMarket', 'undp', 'perundp', 'rev', 'profit', 'gpr', 'npr', 'holders\n']
+['300583', 'N\xe8\xb5\x9b\xe6\x89\x98', '\xe7\x94\x9f\xe7\x89\xa9\xe5\x88\xb6\xe8\x8d\xaf', '\xe5\xb1\xb1\xe4\xb8\x9c', '64.14', '0.27', '1.07', '94700.42', '0.0', '0.0', '0.0', '0.0', '0.678', '6.89', '8.43', '20170106', '0.0', '0.0', '-21.75', '-49.75', '0.0', '18.97', '47339\n']
+['603228', 'N\xe6\x99\xaf\xe6\x97\xba', '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', '\xe6\xb7\xb1\xe5\x9c\xb3', '24.91', '0.48', '4.08', '317009.59', '194374.45', '110117.42', '3928.62', '0.1', '1.004', '4.66', '7.15', '20170106', '122314.7', '3.0', '22.78', '26.67', '31.89', '17.07', '43122\n']
+['002838', 'N\xe9\x81\x93\xe6\x81\xa9', '\xe5\xa1\x91\xe6\x96\x99', '\xe5\xb1\xb1\xe4\xb8\x9c', '22.56', '0.21', '0.84', '67476.68', '40767.73', '13757.82', '9038.25', '1.08', '0.732', '7.19', '3.06', '20170106', '27768.75', '3.31', '19.03', '48.28', '25.35', '11.32', '41516\n']
+['600495', '\xe6\x99\x8b\xe8\xa5\xbf\xe8\xbd\xa6\xe8\xbd\xb4', '\xe8\xbf\x90\xe8\xbe\x93\xe8\xae\xbe\xe5\xa4\x87', '\xe5\xb1\xb1\xe8\xa5\xbf', '1351.46', '12.08', '12.08', '365096.34', '207525.92', '68221.4', '116013.51', '0.96', '0.005', '2.55', '3.26', '20040526', '53874.07', '0.45', '-48.39', '-88.94', '11.36', '0.81', '149143\n']
+['603186', '\xe5\x8d\x8e\xe6\xad\xa3\xe6\x96\xb0\xe6\x9d\x90', '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', '\xe6\xb5\x99\xe6\xb1\x9f', '14.67', '0.32', '1.29', '110635.36', '75836.61', '0.0', '0.0', '0.0', '0.526', '4.05', '2.54', '20170103', '0.0', '0.0', '25.63', '114.72', '0.0', '8.19', '30121\n']
+>>> for i in fi:
+...     print i.split(',')
+... 
+>>> 
+>>> fi = open(f)
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'NoneType' object has no attribute 'extend'
+>>> fi = open(f)
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'NoneType' object has no attribute 'extend'
+>>> 
+>>> strlist = [1,]
+>>> strlist.extend([1,3])
+>>> strlist
+[1, 1, 3]
+>>> fi = open(f)
+>>> for i in fi:
+...     strlist = strlist.extend(i.split(','))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'NoneType' object has no attribute 'extend'
+>>> fi = open(f)
+>>> for i in fi:
+... strlist.extend([1,3])
+  File "<stdin>", line 2
+    strlist.extend([1,3])
+          ^
+IndentationError: expected an indented block
+>>> 
+>>> strlist = []
+>>> fi = open(f)
+>>> for i in fi:
+...     strlist.extend(i.split(','))
+... 
+>>> 
+>>> strlist
+['code', 'name', 'industry', 'area', 'pe', 'outstanding', 'totals', 'totalAssets', 'liquidAssets', 'fixedAssets', 'reserved', 'reservedPerShare', 'esp', 'bvps', 'pb', 'timeToMarket', 'undp', 'perundp', 'rev', 'profit', 'gpr', 'npr', 'holders\n', '300583', 'N\xe8\xb5\x9b\xe6\x89\x98', '\xe7\x94\x9f\xe7\x89\xa9\xe5\x88\xb6\xe8\x8d\xaf', '\xe5\xb1\xb1\xe4\xb8\x9c', '64.14', '0.27', '1.07', '94700.42', '0.0', '0.0', '0.0', '0.0', '0.678', '6.89', '8.43', '20170106', '0.0', '0.0', '-21.75', '-49.75', '0.0', '18.97', '47339\n', '603228', 'N\xe6\x99\xaf\xe6\x97\xba', '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', '\xe6\xb7\xb1\xe5\x9c\xb3', '24.91', '0.48', '4.08', '317009.59', '194374.45', '110117.42', '3928.62', '0.1', '1.004', '4.66', '7.15', '20170106', '122314.7', '3.0', '22.78', '26.67', '31.89', '17.07', '43122\n', '002838', 'N\xe9\x81\x93\xe6\x81\xa9', '\xe5\xa1\x91\xe6\x96\x99', '\xe5\xb1\xb1\xe4\xb8\x9c', '22.56', '0.21', '0.84', '67476.68', '40767.73', '13757.82', '9038.25', '1.08', '0.732', '7.19', '3.06', '20170106', '27768.75', '3.31', '19.03', '48.28', '25.35', '11.32', '41516\n', '600495', '\xe6\x99\x8b\xe8\xa5\xbf\xe8\xbd\xa6\xe8\xbd\xb4', '\xe8\xbf\x90\xe8\xbe\x93\xe8\xae\xbe\xe5\xa4\x87', '\xe5\xb1\xb1\xe8\xa5\xbf', '1351.46', '12.08', '12.08', '365096.34', '207525.92', '68221.4', '116013.51', '0.96', '0.005', '2.55', '3.26', '20040526', '53874.07', '0.45', '-48.39', '-88.94', '11.36', '0.81', '149143\n', '603186', '\xe5\x8d\x8e\xe6\xad\xa3\xe6\x96\xb0\xe6\x9d\x90', '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', '\xe6\xb5\x99\xe6\xb1\x9f', '14.67', '0.32', '1.29', '110635.36', '75836.61', '0.0', '0.0', '0.0', '0.526', '4.05', '2.54', '20170103', '0.0', '0.0', '25.63', '114.72', '0.0', '8.19', '30121\n']
+>>> data_counts = Counter(strlist)
+>>> data_counts
+Counter({'0.0': 13, '20170106': 3, '12.08': 2, '\xe5\xb1\xb1\xe4\xb8\x9c': 2, '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6': 2, '7.15': 1, '25.35': 1, 'code': 1, '43122\n': 1, '7.19': 1, 'N\xe9\x81\x93\xe6\x81\xa9': 1, '8.19': 1, '0.48': 1, '0.45': 1, '26.67': 1, '22.56': 1, 'holders\n': 1, '114.72': 1, '75836.61': 1, '4.05': 1, '0.732': 1, '4.08': 1, 'perundp': 1, '603186': 1, '1.004': 1, '207525.92': 1, '-21.75': 1, '\xe5\xb1\xb1\xe8\xa5\xbf': 1, '-49.75': 1, 'name': 1, '1.07': 1, '1.08': 1, 'N\xe6\x99\xaf\xe6\x97\xba': 1, '600495': 1, '603228': 1, '\xe6\xb7\xb1\xe5\x9c\xb3': 1, 'bvps': 1, '\xe6\xb5\x99\xe6\xb1\x9f': 1, '41516\n': 1, '47339\n': 1, '17.07': 1, '27768.75': 1, '3.0': 1, '68221.4': 1, 'esp': 1, 'profit': 1, '0.27': 1, 'rev': 1, '0.21': 1, 'totals': 1, '19.03': 1, '\xe6\x99\x8b\xe8\xa5\xbf\xe8\xbd\xa6\xe8\xbd\xb4': 1, '-88.94': 1, '8.43': 1, '14.67': 1, '3.06': 1, 'undp': 1, '4.66': 1, '1351.46': 1, '48.28': 1, 'N\xe8\xb5\x9b\xe6\x89\x98': 1, 'industry': 1, '2.54': 1, '31.89': 1, '122314.7': 1, '002838': 1, '149143\n': 1, '13757.82': 1, '94700.42': 1, '20170103': 1, '53874.07': 1, '30121\n': 1, 'totalAssets': 1, '2.55': 1, 'area': 1, '194374.45': 1, 'timeToMarket': 1, '64.14': 1, 'pb': 1, '317009.59': 1, '0.81': 1, '0.84': 1, 'pe': 1, '300583': 1, '0.005': 1, 'gpr': 1, '-48.39': 1, '0.678': 1, '\xe7\x94\x9f\xe7\x89\xa9\xe5\x88\xb6\xe8\x8d\xaf': 1, '24.91': 1, '40767.73': 1, '25.63': 1, 'reservedPerShare': 1, '6.89': 1, '365096.34': 1, '18.97': 1, '3.31': 1, '9038.25': 1, '0.96': 1, 'reserved': 1, 'outstanding': 1, '0.1': 1, '110117.42': 1, '0.32': 1, '67476.68': 1, '0.526': 1, '\xe5\x8d\x8e\xe6\xad\xa3\xe6\x96\xb0\xe6\x9d\x90': 1, '3928.62': 1, '110635.36': 1, '116013.51': 1, '\xe5\xa1\x91\xe6\x96\x99': 1, '1.29': 1, '22.78': 1, 'fixedAssets': 1, '3.26': 1, '20040526': 1, 'npr': 1, '\xe8\xbf\x90\xe8\xbe\x93\xe8\xae\xbe\xe5\xa4\x87': 1, 'liquidAssets': 1, '11.36': 1, '11.32': 1})
+>>> set(data_counts)
+set(['7.15', '25.35', 'code', 'rev', '7.19', 'N\xe9\x81\x93\xe6\x81\xa9', '8.19', '0.48', '0.45', '26.67', '22.56', 'holders\n', '20170106', '12.08', '75836.61', '4.05', '0.732', '4.08', 'perundp', '603186', '1.004', '207525.92', '-21.75', '\xe5\xb1\xb1\xe8\xa5\xbf', '-49.75', 'name', '1.07', '1.08', 'N\xe6\x99\xaf\xe6\x97\xba', '600495', '603228', '\xe6\xb7\xb1\xe5\x9c\xb3', 'bvps', '\xe6\xb5\x99\xe6\xb1\x9f', '41516\n', '47339\n', '17.07', '27768.75', '3.0', '\xe5\xb1\xb1\xe4\xb8\x9c', '68221.4', 'esp', 'profit', '0.27', '43122\n', '0.21', 'totals', '19.03', '\xe6\x99\x8b\xe8\xa5\xbf\xe8\xbd\xa6\xe8\xbd\xb4', '-88.94', '8.43', '14.67', '3.06', 'undp', '31.89', '1351.46', '48.28', 'N\xe8\xb5\x9b\xe6\x89\x98', 'industry', 'area', '4.66', '122314.7', '002838', '149143\n', '13757.82', '94700.42', '114.72', '20170103', '53874.07', '30121\n', 'totalAssets', '\xe8\xbf\x90\xe8\xbe\x93\xe8\xae\xbe\xe5\xa4\x87', '2.55', '2.54', '194374.45', 'timeToMarket', '64.14', 'pb', '317009.59', '0.81', '0.84', 'pe', '300583', '0.005', 'gpr', '-48.39', '0.678', '24.91', '40767.73', '25.63', 'reservedPerShare', '6.89', '365096.34', '18.97', '3.31', '9038.25', '0.96', 'reserved', 'outstanding', '0.1', '0.0', '110117.42', '0.32', '67476.68', '0.526', '\xe5\x8d\x8e\xe6\xad\xa3\xe6\x96\xb0\xe6\x9d\x90', '3928.62', '110635.36', '116013.51', '\xe5\xa1\x91\xe6\x96\x99', '11.36', '22.78', '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', 'fixedAssets', '3.26', '20040526', 'npr', '\xe7\x94\x9f\xe7\x89\xa9\xe5\x88\xb6\xe8\x8d\xaf', 'liquidAssets', '1.29', '11.32'])
+>>> data_counts
+Counter({'0.0': 13, '20170106': 3, '12.08': 2, '\xe5\xb1\xb1\xe4\xb8\x9c': 2, '\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6': 2, '7.15': 1, '25.35': 1, 'code': 1, '43122\n': 1, '7.19': 1, 'N\xe9\x81\x93\xe6\x81\xa9': 1, '8.19': 1, '0.48': 1, '0.45': 1, '26.67': 1, '22.56': 1, 'holders\n': 1, '114.72': 1, '75836.61': 1, '4.05': 1, '0.732': 1, '4.08': 1, 'perundp': 1, '603186': 1, '1.004': 1, '207525.92': 1, '-21.75': 1, '\xe5\xb1\xb1\xe8\xa5\xbf': 1, '-49.75': 1, 'name': 1, '1.07': 1, '1.08': 1, 'N\xe6\x99\xaf\xe6\x97\xba': 1, '600495': 1, '603228': 1, '\xe6\xb7\xb1\xe5\x9c\xb3': 1, 'bvps': 1, '\xe6\xb5\x99\xe6\xb1\x9f': 1, '41516\n': 1, '47339\n': 1, '17.07': 1, '27768.75': 1, '3.0': 1, '68221.4': 1, 'esp': 1, 'profit': 1, '0.27': 1, 'rev': 1, '0.21': 1, 'totals': 1, '19.03': 1, '\xe6\x99\x8b\xe8\xa5\xbf\xe8\xbd\xa6\xe8\xbd\xb4': 1, '-88.94': 1, '8.43': 1, '14.67': 1, '3.06': 1, 'undp': 1, '4.66': 1, '1351.46': 1, '48.28': 1, 'N\xe8\xb5\x9b\xe6\x89\x98': 1, 'industry': 1, '2.54': 1, '31.89': 1, '122314.7': 1, '002838': 1, '149143\n': 1, '13757.82': 1, '94700.42': 1, '20170103': 1, '53874.07': 1, '30121\n': 1, 'totalAssets': 1, '2.55': 1, 'area': 1, '194374.45': 1, 'timeToMarket': 1, '64.14': 1, 'pb': 1, '317009.59': 1, '0.81': 1, '0.84': 1, 'pe': 1, '300583': 1, '0.005': 1, 'gpr': 1, '-48.39': 1, '0.678': 1, '\xe7\x94\x9f\xe7\x89\xa9\xe5\x88\xb6\xe8\x8d\xaf': 1, '24.91': 1, '40767.73': 1, '25.63': 1, 'reservedPerShare': 1, '6.89': 1, '365096.34': 1, '18.97': 1, '3.31': 1, '9038.25': 1, '0.96': 1, 'reserved': 1, 'outstanding': 1, '0.1': 1, '110117.42': 1, '0.32': 1, '67476.68': 1, '0.526': 1, '\xe5\x8d\x8e\xe6\xad\xa3\xe6\x96\xb0\xe6\x9d\x90': 1, '3928.62': 1, '110635.36': 1, '116013.51': 1, '\xe5\xa1\x91\xe6\x96\x99': 1, '1.29': 1, '22.78': 1, 'fixedAssets': 1, '3.26': 1, '20040526': 1, 'npr': 1, '\xe8\xbf\x90\xe8\xbe\x93\xe8\xae\xbe\xe5\xa4\x87': 1, 'liquidAssets': 1, '11.36': 1, '11.32': 1})
+>>> data_counts.mostcommon(6)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Counter' object has no attribute 'mostcommon'
+>>> data_counts.most_common(6)
+[('0.0', 13), ('20170106', 3), ('12.08', 2), ('\xe5\xb1\xb1\xe4\xb8\x9c', 2), ('\xe5\x85\x83\xe5\x99\xa8\xe4\xbb\xb6', 2), ('7.15', 1)]
+>>> 
