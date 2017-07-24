@@ -26,4 +26,70 @@
             使用Example进行实例代码操作，使用模拟器和wireshark 可以查看实际的通信
             记住一点，10048 错误是端口被占用的意思，要注意
 
+代码已经可以运行
+1、学习使用cmd命令
+看Samplecmd.py
+第一步先建立设备
+    this_device = LocalDeviceObject(
+        objectName=args.ini.objectname,
+        objectIdentifier=int(args.ini.objectidentifier),
+        maxApduLengthAccepted=int(args.ini.maxapdulengthaccepted),
+        segmentationSupported=args.ini.segmentationsupported,
+        vendorIdentifier=int(args.ini.vendoridentifier),
+        )
 
+class SampleApplication(BIPSimpleApplication):
+
+    def __init__(self, device, address):
+        if _debug: SampleApplication._debug("__init__ %r %r", device, address)
+        BIPSimpleApplication.__init__(self, device, address)
+
+    def request(self, apdu):
+        if _debug: SampleApplication._debug("request %r", apdu)
+        BIPSimpleApplication.request(self, apdu)
+
+    def indication(self, apdu):
+        if _debug: SampleApplication._debug("indication %r", apdu)
+        BIPSimpleApplication.indication(self, apdu)
+
+    def response(self, apdu):
+        if _debug: SampleApplication._debug("response %r", apdu)
+        BIPSimpleApplication.response(self, apdu)
+
+    def confirmation(self, apdu):
+        if _debug: SampleApplication._debug("confirmation %r", apdu)
+        BIPSimpleApplication.confirmation(self, apdu)
+
+
+@bacpypes_debugging
+class SampleConsoleCmd(ConsoleCmd):
+     
+    my_cache= {}
+    def do_nothing(self, args):
+        """nothing can be done"""
+        args = args.split()
+        if _debug:
+            SampleConsoleCmd._debug("do_nothing %r", args)
+
+    def do_set(self, arg):
+        """set <key> <value> - change a cache value"""
+        if _debug: SampleConsoleCmd._debug("do_set %r", arg)
+        key, value = arg.split()
+        self.my_cache[key] = value
+
+    def do_del(self, arg):
+        """del <key> - delete a cache entry"""
+        if _debug: SampleConsoleCmd._debug("do_del %r", arg)
+        try:
+            del self.my_cache[arg]
+        except:
+            print(arg, "not in cache")
+
+    def do_dump(self, arg):
+        """dump - nicely print the cache"""
+        if _debug: SampleConsoleCmd._debug("do_dump %r", arg)
+        print(self.my_cache) 
+
+#简单的cmd命令应用和简单的BIPSimpleApplication
+
+        添加指令很简单，继承ConsoleCmm，然后使用do_"cmd"方法，可以使用共有变量来协调
