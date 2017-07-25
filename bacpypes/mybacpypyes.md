@@ -93,3 +93,19 @@ class SampleConsoleCmd(ConsoleCmd):
 #简单的cmd命令应用和简单的BIPSimpleApplication
 
         添加指令很简单，继承ConsoleCmm，然后使用do_"cmd"方法，可以使用共有变量来协调
+
+20170725 
+IOCB
+IOCBcontroler 
+1疑问： icop和ICOBcontrol
+没有目标地址，他是往哪里发送IOCB了?
+IOCB 不仅仅包含基本信息，还有回调方法
+
+每一个IOCB还可以进行基本的线程等待；
+
+20170726 HandsonSample
+1、例子1，简单app
+可以通过App模拟一个设备，不需要使用设备模拟器，可以自己写模拟器，通过两者通讯来试验代码；
+基本就是一个SimpleApplication 类，在类里面进行基本的 request response confirm indication等功能
+
+
