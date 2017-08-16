@@ -39,9 +39,9 @@ def array_dotmtp(a1,a2):
     assert len(a1[0])==len(a2), "a1's line must equal to a2's row"
     row = len(a1)
     line = len(a1[0])
-    c = creat2D(row,line)
-    for i in range(row):
-        for j in range(line):
+    c = creat2D(line,row)
+    for i in range(line):
+        for j in range(row):
             for k in range(row):
                 c[i][j] += a1[i][k]*a2[k][j]
 
