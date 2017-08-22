@@ -10,7 +10,6 @@
 
 '''
 
-
 import random
 
 def creat2D(row,line,value = 0):
@@ -37,12 +36,8 @@ class mine_matrix():
         self.matrix_known = creat2D(m,n,value = 9)
         self.mark_record = []
 
-
     def create_new(self):
         # print('------this is create_new-------')
-        # m,n = input('please input (line,row):').split(',')
-
-
         mine_number = int(self.m*self.n/6)
         self.mine_number = mine_number
         location = [(x,y) for y in range(self.n)for x in range(self.m)]
@@ -66,7 +61,6 @@ class mine_matrix():
                             if i1 == i and j1 == j:
                                 pass
                             else:
-
                                 self.matrix[i][j] +=1 if self.matrix[i1][j1]=='mine' else 0
 
 
@@ -126,17 +120,13 @@ class mine_matrix():
             self.mark_record.append((i,j))
             return True
 
-
     def matrixknown(self,i,j):
         # print('-----matrixknown------')
         self.matrix_known[i][j] =self.matrix[i][j]
-        # print('matrix_know[{0}][{1}] is {2}'.format(i,j,self.matrix_known[i][j]))
-        # print('matrix[{0}][{1}] is {2}'.format(i,j,self.matrix[i][j]))
-
-
 
 
     def choice(self,m,n):
+
         # print('-----choice------')
         new_choice = input('would you want to start a new game(n) or to quit(q)?')
 
@@ -145,13 +135,11 @@ class mine_matrix():
             self.__init__(m,n)
             self.create_new()
             return True
-
-
-
         else:
             return False
 
 def new_choice(m,n):
+
     new_choice = input('would you want to start a new game(n) or to quit(q)?')
 
     if new_choice == 'n':
@@ -165,44 +153,53 @@ def new_choice(m,n):
         return False
 
 def main():
-    m = int(input('please input m:'))
-    n = int(input('please input n:'))
-
-    mine1 = mine_matrix(m,n)
-    mine1.create_new()
 
 
-    while True:
-        if mine1.win():
-            print('you win!')
-            for line in mine1.matrix:
-                print (line)
+    try:
+        m = int(input('please input the line number:'))
+        n = int(input('please input the row number:'))
+
+        mine1 = mine_matrix(m,n)
+        mine1.create_new()
 
 
-            mine1 = new_choice(m,n)
-            mine1.create_new()
-            if not mine1:
-                break
+        while True:
+            if mine1.win():
+                print('you win!')
 
-        mine1.print_known()
+                for line in mine1.matrix:
+                    print (line)
+                one_more_game = new_choice(m,n)
+                if not one_more_game:
+                    break
+                else:
+                    mine1 = one_more_game
+                    mine1.create_new()
 
-        choice= input('please input(i,j,[c]heck/[m]ark),or input "q" to quit:')
+            mine1.print_known()
+            try:
+                choice= input('please input(i,j,[c]heck/[m]ark),or input "q" to quit:')
 
-        if choice == 'q':
-            print('you chose to quit the game')
-            break
-        else:
-            i,j,operation = choice.split(',')
-            i = int(i)
-            j = int(j)
-            op_result = mine1.operation(m,n,i,j,operation)
-            # print('op_result is {0}'.format(op_result))
-        if not op_result:
-            break
+                if choice == 'q':
+                    print('you chose to quit the game')
+                    break
+                else:
+                    i,j,operation = choice.split(',')
+                    i = int(i)
+                    j = int(j)
+                    continue_to_play =  mine1.operation(m,n,i,j,operation)
+
+                if not continue_to_play:
+                    break
+            except ValueError:
+                print('Value Error,传入了无效的参数')
 
 
 
 
+
+    except ValueError:
+        print('Value Error,传入了无效的参数')
 
 
 main()
