@@ -16,5 +16,3 @@ sys.stdin.read(), sys.stdin.readline(),sys.stdout
 
 content = sys.stdin.read()
 
-for line in content:
-    print('this is line:{0}'.format(line))
