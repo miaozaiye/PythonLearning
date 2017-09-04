@@ -1,3 +1,5 @@
+#两个刚性小球在指定范围内碰撞，1个有轨迹，1个没有
+
 from stdpackage import stddraw
 
 stddraw.setXscale(-1.0,1.0)

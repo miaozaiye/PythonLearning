@@ -40,11 +40,11 @@ from stdpackage.color import CYAN
 from stdpackage.color import MAGENTA
 from stdpackage.color import YELLOW
 from stdpackage.color import DARK_RED
-from color import DARK_GREEN
-from color import DARK_BLUE
-from color import GRAY
-from color import DARK_GRAY
-from color import LIGHT_GRAY
+from stdpackage.color import DARK_GREEN
+from stdpackage.color import DARK_BLUE
+from stdpackage.color import GRAY
+from stdpackage.color import DARK_GRAY
+from stdpackage.color import LIGHT_GRAY
 from color import ORANGE
 from color import VIOLET
 from color import PINK
