@@ -16,7 +16,8 @@ import pymongo
 from bs4 import BeautifulSoup
 import requests
 import time
-from QcloudApi.qcloudapi import QcloudApi
+import sys
+# from QcloudApi.qcloudapi import QcloudApi
 from mongoengine import *
 
 # client = pymongo.MongoClient('localhost',27017)
@@ -40,6 +41,9 @@ def get_goodcomments(url_0):
 
     Comments = [ ]
     good_employee = {}
+    tmp = sys.stdout
+    f = open('parse_proginn.log','w')
+    sys.stdout = f
 
     for page in range(1,31):
         url = url_0+str(page)
@@ -51,6 +55,8 @@ def get_goodcomments(url_0):
 
         comments = soup.select('div.comment')
         employees = soup.select('.name')
+
+        print('this is page{0}'.format(page)) 
 
         for comment,employee in zip(comments,employees):
             # print(comment)
@@ -69,8 +75,9 @@ def get_goodcomments(url_0):
 
 
 
-
+    sys.stdout=tmp
     f1 = open('proginn_comments.txt','w',encoding='utf-8')
+    print('over, pls. check log in <parse_proginn.log>')
     for item in Comments:
        f1.write(item+'\n')
     f1.close()
