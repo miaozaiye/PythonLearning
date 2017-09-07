@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 import requests
 import time
 import sys
-# from QcloudApi.qcloudapi import QcloudApi
+from QcloudApi.qcloudapi import QcloudApi
 from mongoengine import *
 
 # client = pymongo.MongoClient('localhost',27017)
