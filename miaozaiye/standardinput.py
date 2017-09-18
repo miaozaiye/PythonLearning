@@ -7,25 +7,24 @@ def main():
     y = int(s[1])
     z = int(s[2])
     r = 0
-
+    List = []
     while True:
         line = sys.stdin.readline()
+
         if not line:
             break
         s = line.split(',')
-        x_1 = int(s[0])
+        print('this is s:{0}'.format((s[0],s[1],s[2].rstrip())))
+        x_1 = int(s[0].rstrip())
         y_1 = int(s[1])
-        z_1 = int(s[2])
+        z_1 = int(s[2].rstrip())
 
         r_1 = math.sqrt((x-x_1)*(x-x_1) + (y-y_1)*(y-y_1) +(z-z_1)*(z-z_1))
-        if r_1>r:
-            r = r_1
-            x_0 = x_1
-            y_0 = y_1
-            z_0 = z_1
-        else:
-            pass
+        List.append((r_1,x_1,y_1,z_1))
 
-        print('r is {0:.2f},(x,y,z) is {1}'.format(r,(x_0,y_0,z_0)))
+    print(List)
+    sorted(List,lambda x:x[0])
+    print(List)
+
 
 main()

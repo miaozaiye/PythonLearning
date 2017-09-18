@@ -82,11 +82,11 @@ def get_goodcomments(url_0):
        f1.write(item+'\n')
     f1.close()
 
-    # f2 = open('proginn_good_employee.txt','w',encoding='utf-8')
-    # for item in good_employee:
-    #
-    #     f2.write(good_employee+'\n')
-    # f2.close()
+    f2 = open('proginn_good_employee.txt','w',encoding='utf-8')
+    for item in good_employee:
+
+        f2.write(good_employee+'\n')
+    f2.close()
 
     print(Comments)
     print(good_employee)

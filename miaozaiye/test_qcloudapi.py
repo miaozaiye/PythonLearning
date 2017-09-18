@@ -1,4 +1,7 @@
+# -*- coding:utf-8 -*-
 from QcloudApi.qcloudapi import QcloudApi
+
+from urllib import parse
 
 '''
 module: 设置需要加载的模块
@@ -26,13 +29,13 @@ config = {
     'Region': 'ap-guangzhou',
     'secretId': 'AKIDoV5UmtmzowviJhEv55ua7XmsqcBavbOz',
     'secretKey': 'bFj3Rq7D9ze6QZVFsPnEg2DD3139JUZS',
-    #'method': 'GET',
+    'method': 'GET',
     #'SignatureMethod': 'HmacSHA1'
 }
 
 # 接口参数
 action_params = {
-    'content':'李亚鹏挺王菲：加油！孩儿她娘。',
+    'content':parse.quote('孩子他娘，加油！'),
 }
 
 try:
@@ -53,7 +56,8 @@ try:
     service.setRequestMethod(method)
     # 重新设置请求的SignatureMethod
     SignatureMethod = 'HmacSHA256'
-    service.setRequestMethod(SignatureMethod)
+    #service.setRequestMethod(SignatureMethod)
+    service.setSignatureMethod(SignatureMethod)
 
     # 生成请求的URL，不发起请求
     print(service.generateUrl(action, action_params))
