@@ -3,7 +3,7 @@
 
 import sys
 from stdpackage import stddraw
-
+import random
 
 def draw_chessboard(n,r,x_group,y_group):
     for x_i in range(n):
@@ -14,12 +14,14 @@ def draw_chessboard(n,r,x_group,y_group):
             stddraw.setPenColor(stddraw.WHITE)
             stddraw.text(x_i,y_i,'{0},{1}'.format(x_i,y_i))
 
-    stddraw.show()
 
 
-def draw_ball():
 
+def draw_ball(x,y,r,DT):
 
+    stddraw.setPenColor(stddraw.WHITE)
+    stddraw.filledCircle(x,y,r)
+    stddraw.show(DT)
 
 def main():
     n = int(sys.argv[1]) # get input value of n
@@ -34,6 +36,10 @@ def main():
     stddraw.setYscale(scale[0],scale[1])
 
     draw_chessboard(n,r,x_group,y_group)
+    while True:
+        x = random(0.2)
+        y = random(0.2)
+        draw_ball(x,y,0.2,10)
 
 
 
