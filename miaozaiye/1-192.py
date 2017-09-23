@@ -3,6 +3,7 @@
 import math
 import random
 from stdpackage import stddraw
+import sys
 
 class Points():
     def __init__(self,n):
@@ -19,7 +20,7 @@ class Circle(Points):
     def __init__(self,n = 0,p = 0.0):
         super().__init__(n)
         self.p = p
-        print(self.p,self.x,self.y)
+
 
     def possibility(self):
         a = random.random()
@@ -28,32 +29,41 @@ class Circle(Points):
     def line(self):
         stddraw.setYscale(-1.5,1.5)
         stddraw.setXscale(-1.5,1.5)
-        try:
-            done_point = []
-            for (x1,y1) in zip(self.x,self.y):
-                if (x1,y1) not in done_point:
-                    done_point.append((x1,y1))
+        # try:
+        done_point = []
+        for (x1,y1) in zip(self.x,self.y):
+            if (x1,y1) not in done_point:
 
-                    for (x2,y2) in zip(self.x,self.y):
-                        if (x1,y1) != (x2,y2) and self.possibility():
-                            stddraw.setPenColor(stddraw.LIGHT_GRAY)
-                            stddraw.setPenRadius(r = 0.01)
-                            stddraw.line(x1,y1,x2,y2)
-                        else:
-                            pass
-                else:
-                    pass
-            for (x,y) in zip(self.x,self.y):
-                stddraw.setPenRadius(r = 0.02)
-                stddraw.setPenColor(stddraw.BLACK)
-                stddraw.point(x,y)
-        except Exception:
-            print(Exception)
+                done_point.append((x1,y1))
+
+                for (x2,y2) in zip(self.x,self.y):
+                    if (x1,y1) != (x2,y2) and self.possibility():
+                        color_list=[stddraw.LIGHT_GRAY,stddraw.RED,stddraw.BLUE]
+                        color_choice=random.sample(color_list,1)
+                        stddraw.setPenColor(stddraw.BOOK_LIGHT_BLUE)
+                        stddraw.setPenRadius(r = 0.01)
+                        stddraw.line(x1,y1,x2,y2)
+                        stddraw.show(20.0)
+                    else:
+                        pass
+            else:
+                pass
+        for (x,y) in zip(self.x,self.y):
+            stddraw.setPenRadius(r = 0.02)
+            stddraw.setPenColor(stddraw.BLACK)
+            stddraw.point(x,y)
+        # except Exception:
+        #     print(Exception)
 
     def show(self):
         stddraw.show()
 
 
-a = Circle(n = 17,p = 0.25)
-a.line()
-a.show()
+def main():
+    n = sys.argv[1]
+    p = sys.argv[2]
+    a = Circle(n = 17,p = 0.25)
+    a.line()
+    a.show()
+
+main()
