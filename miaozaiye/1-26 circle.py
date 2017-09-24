@@ -5,7 +5,7 @@ import random
 import optparse
 from stdpackage import stddraw
 
-n = 100
+n = 200
 p = 0.3
 min = 0.05
 max = 0.2
@@ -39,8 +39,8 @@ def main():
     while i < n:
         x = 2*random.random()
         y = 2*random.random()
-        r = 0.02*random.randrange(1,5)
-        color = stddraw.BLACK if random.random()<p else stddraw.BLUE
+        r = 0.01*random.randrange(1,30)
+        color = stddraw.BLUE if random.random()<p else stddraw.BOOK_RED
         stddraw.setPenColor(color)
         stddraw.filledCircle(x,y,r)
 

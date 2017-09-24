@@ -43,7 +43,7 @@ class Circle(Points):
                         stddraw.setPenColor(stddraw.BOOK_LIGHT_BLUE)
                         stddraw.setPenRadius(r = 0.01)
                         stddraw.line(x1,y1,x2,y2)
-                        stddraw.show()
+                        stddraw.show(20)
                     else:
                         pass
             else:
