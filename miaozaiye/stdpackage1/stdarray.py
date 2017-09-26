@@ -6,8 +6,8 @@ and writing one- and two-dimensional arrays.
 
 http://introcs.cs.princeton.edu/python/code/
 """
+from stdpackage import stdio
 
-import stdio
 
 #=======================================================================
 # Array creation functions

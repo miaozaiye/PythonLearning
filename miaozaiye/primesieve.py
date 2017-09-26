@@ -21,15 +21,15 @@ def primesieve(n):
             pass
         else:
             for j in range(i,int(n/i+1)):
-                print ('i is {0},j is {1}'.format(i,j))
+                # print ('i is {0},j is {1}'.format(i,j))
                 isPrime[i*j] = False
 
-    print(isPrime)
+    # print(isPrime)
     prime = []
     for index,value in enumerate(isPrime):
-        print(index,value)
+        # print(index,value)
         if value=='True':
-            print(index,value)
+            # print(index,value)
             prime.append(index)
 
 
