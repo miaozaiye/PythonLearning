@@ -32,7 +32,7 @@ def draw_clock(H = 0,M = 0, S = 0):
         Hour_X[i-1]=1*math.cos(-(i/12*2*math.pi-1/2*math.pi))
         Hour_Y[i-1]=1*math.sin(-(i/12*2*math.pi-1/2*math.pi))
 
-    stddraw.setFontSize(20)
+    stddraw.setFontSize(25)
 
     if H>11:
             print('H is {0}'.format(H))
@@ -40,23 +40,44 @@ def draw_clock(H = 0,M = 0, S = 0):
             Hour_count = 1
 
     while True:
-        for H_i in range(H,12):
+        while H<13:
 
-            angle_H = H_i*2*math.pi/12-1/2*math.pi
-            if H_i == 11:
-                H_i = 0
+            angle_H = H*2*math.pi/12-1/2*math.pi
+            print('H is {0}'.format(H))
+            if H == 12:
+                H = 0
                 Hour_count +=1
+
+            H +=1
 
             if Hour_count % 2 == 0:
                 text = 'morining'
             else:
                 text = 'afternoon'
 
-            for M_i in range(M,60):
 
-                angle_M = M_i*2*math.pi/60-1/2*math.pi
+            while M < 61:
 
-                for S_i in range(S,60):
+                angle_M = M*2*math.pi/60-1/2*math.pi
+                print('m is {0}'.format(M))
+
+                if M == 60:
+                    print('m is 60')
+                    M = 0
+                    break
+                else:
+                    M += 1
+                while S<61:
+                    angle_s = S*2*math.pi/60-1/2*math.pi
+                    print('s is {0}'.format(S))
+
+                    if S == 60:
+                        S = 0
+                        print('s is 60')
+                        break
+                    else:
+                        S +=1
+
                     stddraw.clear()
                     stddraw.circle(0,0,R)
                     for i in range(1,13):
@@ -68,7 +89,7 @@ def draw_clock(H = 0,M = 0, S = 0):
                     stddraw.setPenRadius(0.01)
                     stddraw.line(0,0,Min_L*math.cos(-angle_M),Min_L*math.sin(-angle_M))
                     stddraw.setPenRadius(0.005)
-                    angle_s = S_i*2*math.pi/60-1/2*math.pi
+
                     stddraw.line(0,0,Sec_L*math.cos(-angle_s),Sec_L*math.sin(-angle_s))
                     stddraw.show(1000)
 
