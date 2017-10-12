@@ -1,6 +1,8 @@
 # PythonLearning
 learn python, and push codes everyday 
 
+[![Build Status](https://travis-ci.org/miaozaiye/PythonLearning.svg?branch=master)](https://travis-ci.org/miaozaiye/PythonLearning)
+
 https://miaozaiye.github.io/PythonLearning/
 
 说明
