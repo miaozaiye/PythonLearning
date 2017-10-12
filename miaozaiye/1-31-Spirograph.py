@@ -7,7 +7,24 @@ y(t) = (R+e)sin(t)-(r+a)sin((R+r)t/r)
 
 import sys
 import math
-from stdpackage import stddraw,stdarray
+from stdpackage import stddraw,stdarray,stdaudio
+
+SPS = 44100
+CONCERT_A = 220.0
+
+pitch0 = 3
+duration = 0.5
+
+n = int(SPS*duration)
+
+
+def play_tune(x,y):
+    pitch = (pitch0) * (x+y)/2
+    hz = CONCERT_A*(2**(pitch/12.0))
+    samples = stdarray.create1D(n+1,0.0)
+    for i in range(n+1):
+        samples[i] = math.sin(2.0*math.pi*i*hz/SPS)
+    stdaudio.playSamples(samples)
 
 def draw_spirograph(R,r,a):
     stddraw.setXscale(-40,40)
@@ -32,6 +49,7 @@ def draw_spirograph(R,r,a):
 
 
             stddraw.line(x[t],y[t],x[t+1],y[t+1])
+            play_tune(x[t],y[t])
             stddraw.show(5)
     stddraw.show()
 

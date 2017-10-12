@@ -4,11 +4,34 @@ import sys
 import random
 import optparse
 from stdpackage import stddraw
+from stdpackage import stdarray
+from stdpackage import stdaudio
+import math
+
+SPS = 44100
+CONCERT_A = 440.0
+
+pitch0 = 6
+
+
+
+
 
 n = 200
 p = 0.3
 min = 0.05
 max = 0.2
+
+def play_tune(x,y,r):
+    pitch = (pitch0) * math.sqrt(x*x+y*y)/10
+    duration = float(r)*3
+    n1 = int(SPS*duration)
+    hz = CONCERT_A*(2**(pitch/12.0))
+    samples = stdarray.create1D(n1+1,0.0)
+    for i in range(n+1):
+        samples[i] = math.sin(2.0*math.pi*i*hz/SPS)
+    stdaudio.playSamples(samples)
+
 
 def main():
 
@@ -45,6 +68,8 @@ def main():
         stddraw.filledCircle(x,y,r)
 
         i +=1
+
+        play_tune(x,y,r)
         stddraw.show(10)
 
 

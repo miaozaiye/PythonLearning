@@ -9,10 +9,21 @@
 '''
 
 from stdpackage import stddraw
-from stdpackage import stdarray
+from stdpackage import stdarray,stdaudio
 import math
 import sys
 
+
+SPS = 44100
+CONCERT_A = 330.0
+duration = 0.1
+n = int(duration*SPS)
+pitch = 1
+hz = CONCERT_A*(2**(pitch/12.0))
+
+samples = stdarray.create1D(n+1,0.0)
+for i in range(n+1):
+        samples[i] = math.sin(2.0*math.pi*i*hz/SPS)
 
 def draw_clock(H = 0,M = 0, S = 0):
     stddraw.setXscale(-1.5,1.5)
@@ -91,6 +102,7 @@ def draw_clock(H = 0,M = 0, S = 0):
                     stddraw.setPenRadius(0.005)
 
                     stddraw.line(0,0,Sec_L*math.cos(-angle_s),Sec_L*math.sin(-angle_s))
+                    stdaudio.playSamples(samples)
                     stddraw.show(1000)
 
 def main():

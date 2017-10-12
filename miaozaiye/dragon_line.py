@@ -25,6 +25,20 @@ l_n[i] = l_new[i/2] if i%2 == 0 else l_(n-1)[int(i/2)]
 
 from stdpackage import stddraw
 import math
+from stdpackage import stdarray
+from stdpackage import stdaudio
+
+
+SPS = 44100
+CONCERT_A = 440.0
+
+pitch0 = 3
+duration = 0.5
+
+n = int(SPS*duration)
+
+
+
 
 class DragonLine:
     def __init__(self):
@@ -45,6 +59,17 @@ class DragonLine:
 
 
 dragonline = DragonLine()
+
+def play_tune(x,y):
+    pitch = (pitch0) * math.sqrt(x*x+y*y)
+
+
+    hz = CONCERT_A*(2**(pitch/12.0))
+    samples = stdarray.create1D(n+1,0.0)
+    for i in range(n+1):
+        samples[i] = math.sin(2.0*math.pi*i*hz/SPS)
+    stdaudio.playSamples(samples)
+
 
 def draw_line(dragonline,turn):
     stddraw.setXscale(-5,5)
@@ -75,9 +100,10 @@ def draw_line(dragonline,turn):
         stddraw.setPenColor(stddraw.BLACK)
         stddraw.line(x_list[index],y_list[index],x_list[index+1],y_list[index+1])
         stddraw.setPenColor(stddraw.RED)
+        play_tune(x,y)
         # stddraw.text(x_list[index],y_list[index],'({0},{1}) to ({2},{3})'.format(x_list[index],y_list[index],x_list[index+1],y_list[index+1]))
         # stddraw.text(x_list[index],y_list[index],str(index))
         stddraw.show(50)
 
 
-draw_line(dragonline,30)
+draw_line(dragonline,20)
