@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dad4b7-2cc2-4340-b15b-775e4fd2f4fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1/test_pytest.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/miaozaiye/1-18.py" afterPath="$PROJECT_DIR$/1/1-18.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PythonLearning.iws" />
@@ -109,17 +107,17 @@
         <entry file="file://$PROJECT_DIR$/1/test_pytest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="1-18.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1/1-18.py">
+        <entry file="file://$PROJECT_DIR$/miaozaiye/1-18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.01983">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.509915">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding>
                 <element signature="e#193#204#0" expanded="true" />
               </folding>
@@ -185,7 +183,6 @@
         <option value="$USER_HOME$/Library/Python/3.5/lib/python/site-packages/QcloudApi/common/sign.py" />
         <option value="$USER_HOME$/Library/Python/3.5/lib/python/site-packages/QcloudApi/common/request.py" />
         <option value="$PROJECT_DIR$/miaozaiye/test_qcloudapi.py" />
-        <option value="$PROJECT_DIR$/miaozaiye/1-18.py" />
         <option value="$PROJECT_DIR$/miaozaiye/1-19.py" />
         <option value="$PROJECT_DIR$/miaozaiye/1-20.py" />
         <option value="$PROJECT_DIR$/miaozaiye/1-21.py" />
@@ -201,8 +198,9 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/pytest_test.py" />
         <option value="$PROJECT_DIR$/test_pytest.py" />
-        <option value="$PROJECT_DIR$/1/test_pytest.py" />
         <option value="$PROJECT_DIR$/1/1-18.py" />
+        <option value="$PROJECT_DIR$/1/test_pytest.py" />
+        <option value="$PROJECT_DIR$/miaozaiye/1-18.py" />
       </list>
     </option>
   </component>
@@ -212,8 +210,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-969" />
-    <option name="y" value="347" />
+    <option name="x" value="-943" />
+    <option name="y" value="365" />
     <option name="width" value="1050" />
     <option name="height" value="1652" />
   </component>
@@ -303,9 +301,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/miaozaiye" />
       <recent name="$PROJECT_DIR$/1" />
       <recent name="$PROJECT_DIR$/miaozaiye/stdpackage1" />
-      <recent name="$PROJECT_DIR$/miaozaiye" />
       <recent name="$PROJECT_DIR$/miaozaiye/stdpackage" />
     </key>
   </component>
@@ -559,8 +557,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-969" y="347" width="1050" height="1652" extended-state="0" />
-    <editor active="false" />
+    <frame x="-943" y="365" width="1050" height="1652" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22619048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -569,7 +567,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268229" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7519531" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7519531" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -960,15 +958,15 @@
     <entry file="file://$PROJECT_DIR$/1/test_pytest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/1-18.py">
+    <entry file="file://$PROJECT_DIR$/miaozaiye/1-18.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.01983">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.509915">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding>
             <element signature="e#193#204#0" expanded="true" />
           </folding>
