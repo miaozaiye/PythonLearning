@@ -18,6 +18,6 @@ stdio.writeln(str(n)+' '+str(n))
 
 for i in range(n):
     for j in range(n):
-        p = (0.9*linkCounts[i][j]/outDegress[i])+(0.1/n)
+        p = (0.8*linkCounts[i][j]/outDegress[i])+(0.2/n)
         stdio.writef('%8.5f',p)
     stdio.writeln()

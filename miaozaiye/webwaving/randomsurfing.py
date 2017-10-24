@@ -15,7 +15,7 @@
 
 '''
 
-from stdpackage import stdio,stdarray
+from stdpackage import stdio,stdarray,stddraw
 import random
 import sys
 
@@ -53,6 +53,8 @@ while move_count<moves:
     move_count+=1
 
 for i in range(n):
+    stddraw.clear()
+
     stdio.writef('%5.2f',SP[i])
     stdio.writeln()
 
