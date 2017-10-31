@@ -113,6 +113,7 @@ def plotBars(a):
     for i in range(n):
         stddraw.filledRectangle(i-0.25, 0.0, 0.5, a[i])
 
+
 #-----------------------------------------------------------------------
 
 def _main():

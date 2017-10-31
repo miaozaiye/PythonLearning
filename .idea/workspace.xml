@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dad4b7-2cc2-4340-b15b-775e4fd2f4fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/bernoulli.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/introcs-python/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/matrix.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/sicherman_dice.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/read_and_draw.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/read_part.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miaozaiye/stdpackage1/stdstats.py" afterPath="$PROJECT_DIR$/miaozaiye/stdpackage1/stdstats.py" />
     </list>
     <ignored path="PythonLearning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,16 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="koch.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miaozaiye/introcs-python/koch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stdrandom.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stdrandom.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,32 +40,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sqrt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miaozaiye/introcs-python/sqrt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stdstats.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stdstats.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+              <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drunk.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miaozaiye/introcs-python/drunk.py">
+      <file leaf-file-name="stddraw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stddraw.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="590" column="21" selection-start-line="590" selection-start-column="21" selection-end-line="590" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read_and_draw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miaozaiye/read_and_draw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#37#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stdstats.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Library/Python/3.5/lib/python/site-packages/stdpackage/stdstats.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6650165">
+              <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+              <folding>
+                <element signature="e#194#205#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,14 +116,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sicherman_dice.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/miaozaiye/sicherman_dice.py">
+      <file leaf-file-name="read_part.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miaozaiye/read_part.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71403813">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-              <folding>
-                <element signature="e#79#89#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,10 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/miaozaiye/trangle_test.py" />
-        <option value="$PROJECT_DIR$/miaozaiye/stdpackage1/stdaudio.py" />
-        <option value="$PROJECT_DIR$/miaozaiye/stdpackage1/stdrandom.py" />
-        <option value="$PROJECT_DIR$/miaozaiye/stdpackage1/stdstats.py" />
         <option value="$PROJECT_DIR$/miaozaiye/stdpackage1/picture.py" />
         <option value="$PROJECT_DIR$/miaozaiye/stdpackage1/instream.py" />
         <option value="$PROJECT_DIR$/miaozaiye/stdpackage1/outstream.py" />
@@ -203,6 +200,10 @@
         <option value="$PROJECT_DIR$/miaozaiye/bernoulli.py" />
         <option value="$PROJECT_DIR$/miaozaiye/matrix.py" />
         <option value="$PROJECT_DIR$/miaozaiye/sicherman_dice.py" />
+        <option value="$PROJECT_DIR$/miaozaiye/read_part.txt" />
+        <option value="$PROJECT_DIR$/miaozaiye/stdpackage1/stdstats.py" />
+        <option value="$PROJECT_DIR$/miaozaiye/read_and_draw.py" />
+        <option value="$USER_HOME$/Library/Python/3.5/lib/python/site-packages/stdpackage/stdstats.py" />
       </list>
     </option>
   </component>
@@ -212,9 +213,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1551" />
+    <option name="x" value="-1841" />
     <option name="y" value="23" />
-    <option name="width" value="1307" />
+    <option name="width" value="1144" />
     <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -563,18 +564,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1551" y="23" width="1307" height="1046" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1841" y="23" width="1144" height="1046" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29090908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3339383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14193548" sideWeight="0.5027668" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5096774" sideWeight="0.4972332" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32580644" sideWeight="0.4972332" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34946236" sideWeight="0.4972332" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34946236" sideWeight="0.4972332" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31827956" sideWeight="0.4972332" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31827956" sideWeight="0.4972332" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -603,27 +604,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miaozaiye/1-19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/get_err_miaozaiye.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/get_err_dom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="265" column="6" selection-start-line="248" selection-start-column="0" selection-end-line="265" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miaozaiye/1-192.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -670,13 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="33" selection-start-line="52" selection-start-column="8" selection-end-line="54" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stddraw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="590" column="21" selection-start-line="590" selection-start-column="21" selection-end-line="590" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -943,14 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stdstats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miaozaiye/bernoulli.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -971,10 +936,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/miaozaiye/sicherman_dice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71403813">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding>
             <element signature="e#79#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/read_part.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stddraw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="590" column="21" selection-start-line="590" selection-start-column="21" selection-end-line="590" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stdstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/read_and_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.5/lib/python/site-packages/stdpackage/stdstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6650165">
+          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+          <folding>
+            <element signature="e#194#205#0" expanded="true" />
           </folding>
         </state>
       </provider>
