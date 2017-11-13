@@ -9,12 +9,6 @@
 
 from stdpackage import stddraw
 
-class line():
-    def __init__(self,length,location):
-        self.length = length
-        self.location = (location[0]-length/2,location[1],location[2]+length/2,location[3])
-        self.name = str(length)
-        self.name_location = (self.location[0]-0.5,location[1])
 
 def draw_setup(n):
     stddraw.setYscale(-1,11)
@@ -27,7 +21,7 @@ def draw_setup(n):
     stddraw.line(9,0,9,8)
     for i in range(1,n+2):
         print(i)
-        line1 = line(2*i/n,(location['a']))
+   
         stddraw.line(3-i/n,8*(n+1-i)/(n+1),3+i/n,8*(n-i+1)/(n+1))
         stddraw.text(3-i/n-0.5,8*(n-i)/n,str(i))
 
@@ -66,7 +60,7 @@ def move(location,dict,n, a, buffer, c):
         print(a,"->",c)
         dict[c].insert(0,dict[a][0])
 
-        del[dict[a][0]]
+        del(dict[a][0])
         draw_move(dict,a,c,location)
         print(dict)
 

@@ -43,6 +43,7 @@ def bernoulli(p=0.5):
     """
     Return True with probability p.
     """
+
     return random.random() < p
 
 #-----------------------------------------------------------------------
