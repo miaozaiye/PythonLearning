@@ -1,6 +1,7 @@
 from stdpackage import stdaudio
 from stdpackage import stdarray
 import math
+import sys
 
 SPS = 44100
 hz = 440.0
