@@ -58,7 +58,20 @@ def generate_transition_matrix(weblist):
     print('return transition_matrix:',transition_matrix)
     return transition_matrix
 
-def count_entropy(weblist,start_page,targets,transiton_matrix,currentpossibility):
+def get_possibility(start,target):
+
+    for link in start.link:
+        if link[0] == target.url:
+            return link[1]
+
+def get_webpage(page,weblist):
+    page_web = webpage(page)
+    for web in weblist:
+            if web.url == page:
+                page_web.link = web.link
+                return page_web
+
+def count_entropy(weblist,start_page,targets,currentpossibility,target_p):
     '''
     entropy is the possibility to get into targets
     1, what's the possibility to get into target in start_page? count_down
@@ -68,30 +81,40 @@ def count_entropy(weblist,start_page,targets,transiton_matrix,currentpossibility
     :param transiton_matrix:
     :return:
     '''
+    print('enter count_entropy()')
     if currentpossibility < 0.001:
         return 0
 
-    star=wblist[start_page]
-    for target in targets:
-        start_page.link
+    start_web = get_webpage(start_page,weblist)
+    print('startlink is:',start_web,start_web.url,start_web.link)
 
 
 
+    for link in start_web.link:
+        link_web = get_webpage(link[0],weblist)
+        print('link_web is:',link_web,link_web.url,link_web.link)
 
-    print('enter count_entropy()')
-    entropy = 0
-    print('return entropy')
-    return entropy
+        if link[0] ==targets:
+           p = get_possibility(start_web,link_web)*currentpossibility
+           target_p +=p
+        else:
+            p = get_possibility(start_web,link_web)
+            linktpossibility = currentpossibility*p
+            target_p+=count_entropy(weblist,link[0],targets,linktpossibility,target_p)
+
+
+    print('target_p is:',target_p)
+    return target_p
 
 def main():
     print('start main()')
 
     weblist = inputpage()
-    transition_matrix = generate_transition_matrix(weblist)
+    # transition_matrix = generate_transition_matrix(weblist)
     targets = input('please chose the index (1-3)target pages, use "," to split:')
     start_page = input('please chose start_page:')
 
-    entropy = count_entropy(weblist,start_page,targets,transition_matrix)
+    entropy = count_entropy(weblist,start_page,targets,1,0)
 
     print('total entropy of current webpages are:',entropy)
 
