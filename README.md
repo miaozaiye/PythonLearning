@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PythonLearning
 learn python, and push codes everyday 
 
@@ -43,3 +44,8 @@ https://miaozaiye.github.io/PythonLearning/
 2 - Python3.5 官方文档：https://docs.python.org/3.5/contents.html
 
 最后，祝大家coding愉快！
+=======
+# pythonlearning
+
+learn python 
+>>>>>>> 3f1fe38e245f521538a79ae53f46267897c60571
