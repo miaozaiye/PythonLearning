@@ -52,12 +52,18 @@ class Body:
         self._v = v
         self._mass = mass
 
-    def move(self,f,dt):
+    def move(self,f,dt,list):
+        # print('move')
         a = f.scale(1.0/self._mass)
         self._v = self._v+a.scale(dt)
-        self._r = self._r + self._v.scale(dt)
 
+        if ( self._r + self._v.scale(dt)) in list:
+            self._v = -self._v
+        self._r = self._r+self._v.scale(dt)
+        # print(self._r,self._v)
 
+    def get_r(self):
+        return self._r
     def forceFrom(self,other):
         G = 6.67e-11
         delta = other._r - self._r
@@ -69,7 +75,10 @@ class Body:
         return delta.direction().scale(magnitude)
 
     def draw(self):
-        stddraw.setPenRadius(0.0125)
+        if self._mass == 5.97e25:
+            stddraw.setPenRadius(0.0125)
+        else:
+            stddraw.setPenRadius(0.025)
         stddraw.point(self._r[0],self._r[1])
 
 
@@ -94,6 +103,7 @@ class Universe:
             self._bodies[i] = Body(r,v,mass)
 
     def increaseTime(self,dt):
+        # print('increasetime')
         n = len(self._bodies)
         f = stdarray.create1D(n,Vector([0,0]))
         for i in range(n):
@@ -102,23 +112,29 @@ class Universe:
                     bodyi = self._bodies[i]
                     bodyj = self._bodies[j]
                     f[i] =f[i] + bodyi.forceFrom(bodyj)
-
+        r_list = []
         for i in range(n):
-            self._bodies[i].move(f[i],dt)
+            # print('r_list is:',r_list)
+            self._bodies[i].move(f[i],dt,r_list)
+            r_list.append(self._bodies[i].get_r())
 
     def draw(self):
         for body in self._bodies:
+            # print('draw body at,',body.get_r())
             body.draw()
 
 
 def main():
     universe = Universe(sys.argv[1])
     dt = float(sys.argv[2])
+    count = 0
     while True:
         universe.increaseTime(dt)
         stddraw.clear()
         universe.draw()
         stddraw.show(10)
+        print(count)
+        count +=1
 
 
 if __name__ == '__main__':main()
