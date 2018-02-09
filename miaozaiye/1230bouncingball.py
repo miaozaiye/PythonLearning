@@ -82,6 +82,9 @@ class Ball:
         print('this is location,',self.location.getatt())
         stddraw.filledCircle(self.location.getatt()[0][0],self.location.getatt()[0][1],self.radius)
 
+
+
+
 class Table:
     def __init__(self,n):
 
@@ -93,8 +96,8 @@ class Table:
         for i in range(n):
             mass = random.randint(1,10)
             radius = random.uniform(1,2)
-            velocity = Vector([random.uniform(0,3),random.uniform(0,3)])
-            location = Vector([random.uniform(0,10),random.uniform(5,10)])
+            velocity = Vector([random.randint(0,3),random.randint(0,3)])
+            location = Vector([random.randint(0,10),random.randint(5,10)])
             print('generate location:',location)
             ball = Ball(mass,radius,velocity,location)
             self._balls[i] = ball
@@ -129,7 +132,7 @@ class Table:
                 self._balls[i].velocity = Vector([-self._balls[i].velocity.getatt()[0][0], self._balls[i].velocity.getatt()[0][1]])
             if self._balls[i].location.getatt()[0][1] -self._balls[i].radius<self._min or self._balls[i].location.getatt()[0][1]+self._balls[i].radius > self._max:
                 self._balls[i].velocity = Vector([self._balls[i].velocity.getatt()[0][0], -self._balls[i].velocity.getatt()[0][1]])
-            f = Vector([0,-0.9])
+            f = f+Vector([0,-0.9])
             self._balls[i].move(f,dt)
 
     def draw(self):
