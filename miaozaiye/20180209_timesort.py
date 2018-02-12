@@ -1,9 +1,15 @@
 
 import sys
 sys.path.insert(0,'/Users/Jane/Library/Python/3.5/lib/python/site-packages/')
-from stdpackage import stdio,instream,stdrandom,stdarray
+from stdpackage import stdio,instream,stdrandom,stdarray,stddraw
 import time
 import random
+sys.path.insert(0,'/Users/Jane/Desktop/PythonLearning')
+import pygame
+
+from miaozaiye import merge
+
+
 def exchange(a,j):
     a[j],a[j-1] = a[j-1],a[j]
 
@@ -58,11 +64,37 @@ def trialtime(f,n,trials):
 
 
 
-def doubletrial(f,n,trials):
-    timelist = stdarray.create1D(5)
-    for i in range(5):
+def doubletrial(f,n,length,trials):
+    timelist = stdarray.create1D(length)
+    timecount = stdarray.create1D(length)
+    for i in range(length):
         timelist[i] = trialtime(f,n*(2**i),trials)
-        print(n*(2**i),trials,timelist[i]/timelist[0])
+
+        print(n*(2**i),timelist[i],int(timelist[i]/timelist[0]))
+        timecount[i] = int(timelist[i]/timelist[0])
+    return timelist
+
+def draw_count(countlist):
+    # stddraw.setCanvasSize(100,100)
+    stddraw.setXscale(-1,10)
+    stddraw.setYscale(-0.1,0.5)
+    stddraw.setPenColor(stddraw.GRAY)
+    stddraw.line(0,0,100,0)
+    stddraw.line(0,0,0,5000)
+    for List in countlist:
+        for i in range(1,len(List)):
+            stddraw.line(i-1,List[i-1],i,List[i])
 
 
-doubletrial(insert,128,100)
+def main(length,trials):
+
+
+    count1 = doubletrial(insert,30,length,trials)
+    count2 = doubletrial(merge.insert,30,length,trials)
+    print(count1,'\n',count2)
+
+    draw_count([count1,count2])
+    stddraw.show()
+
+main(10,100)
+
