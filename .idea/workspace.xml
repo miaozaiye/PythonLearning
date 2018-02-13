@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dad4b7-2cc2-4340-b15b-775e4fd2f4fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/article" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/frequentcount.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/merge.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/solutionforfx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/MM1queue.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miaozaiye/nodequene.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miaozaiye/20180209_timesort.py" afterPath="$PROJECT_DIR$/miaozaiye/20180209_timesort.py" />
     </list>
     <ignored path="PythonLearning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,21 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="20180209_insertion.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miaozaiye/20180209_insertion.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="20180209_timesort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miaozaiye/20180209_timesort.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -72,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frequentcount.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frequentcount.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miaozaiye/frequentcount.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41821247">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="e#92#102#0" expanded="true" />
               </folding>
@@ -84,11 +71,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swirlfilter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miaozaiye/swirlfilter.py">
+      <file leaf-file-name="nodequene.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miaozaiye/nodequene.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MM1queue.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/miaozaiye/MM1queue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7013575">
+              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+              <folding>
+                <element signature="e#154#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stdrandom.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stdrandom.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.296296">
+              <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -104,21 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testdraw.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miaozaiye/testdraw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stddraw.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stddraw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.4074075">
+              <caret line="384" column="7" selection-start-line="384" selection-start-column="7" selection-end-line="384" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -149,8 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/miaozaiye/1112 brownian.py" />
-        <option value="$PROJECT_DIR$/miaozaiye/1113 binary.py" />
         <option value="$PROJECT_DIR$/miaozaiye/1119 tree.py" />
         <option value="$PROJECT_DIR$/miaozaiye/percolation/perculation0.py" />
         <option value="$PROJECT_DIR$/miaozaiye/percolation/percolationv.py" />
@@ -200,6 +197,8 @@
         <option value="$PROJECT_DIR$/miaozaiye/article" />
         <option value="$PROJECT_DIR$/miaozaiye/merge.py" />
         <option value="$PROJECT_DIR$/miaozaiye/frequentcount.py" />
+        <option value="$PROJECT_DIR$/miaozaiye/nodequene.py" />
+        <option value="$PROJECT_DIR$/miaozaiye/MM1queue.py" />
       </list>
     </option>
   </component>
@@ -239,6 +238,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,7 +291,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,7 +308,7 @@
       <recent name="$PROJECT_DIR$/miaozaiye/stdpackage" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.frequentcount">
+  <component name="RunManager" selected="Python.MM1queue">
     <configuration default="false" name="20180209_timesort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -324,42 +323,6 @@
       <module name="PythonLearning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/miaozaiye/20180209_timesort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/miaozaiye" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonLearning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/miaozaiye/merge.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="1119 tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/miaozaiye" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonLearning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/miaozaiye/1119 tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -396,6 +359,42 @@
       <module name="PythonLearning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/miaozaiye/frequentcount.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="nodequene" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/miaozaiye" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonLearning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/miaozaiye/nodequene.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MM1queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/miaozaiye" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonLearning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/miaozaiye/MM1queue.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -530,18 +529,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.20180209_timesort" />
-      <item index="1" class="java.lang.String" itemvalue="Python.merge" />
-      <item index="2" class="java.lang.String" itemvalue="Python.1119 tree" />
-      <item index="3" class="java.lang.String" itemvalue="Python.solutionforfx" />
-      <item index="4" class="java.lang.String" itemvalue="Python.frequentcount" />
+      <item index="1" class="java.lang.String" itemvalue="Python.solutionforfx" />
+      <item index="2" class="java.lang.String" itemvalue="Python.frequentcount" />
+      <item index="3" class="java.lang.String" itemvalue="Python.nodequene" />
+      <item index="4" class="java.lang.String" itemvalue="Python.MM1queue" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.frequentcount" />
-        <item index="1" class="java.lang.String" itemvalue="Python.solutionforfx" />
-        <item index="2" class="java.lang.String" itemvalue="Python.20180209_timesort" />
-        <item index="3" class="java.lang.String" itemvalue="Python.1119 tree" />
-        <item index="4" class="java.lang.String" itemvalue="Python.merge" />
+        <item index="0" class="java.lang.String" itemvalue="Python.MM1queue" />
+        <item index="1" class="java.lang.String" itemvalue="Python.nodequene" />
+        <item index="2" class="java.lang.String" itemvalue="Python.frequentcount" />
+        <item index="3" class="java.lang.String" itemvalue="Python.solutionforfx" />
+        <item index="4" class="java.lang.String" itemvalue="Python.20180209_timesort" />
       </list>
     </recent_temporary>
   </component>
@@ -565,12 +564,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11075612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14193548" sideWeight="0.5027668" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19515885" sideWeight="0.4972332" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102874435" sideWeight="0.4972332" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32412326" sideWeight="0.4972332" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34006375" sideWeight="0.4972332" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2656748" sideWeight="0.4972332" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21482602" sideWeight="0.4972332" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1455898" sideWeight="0.4972332" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -622,20 +621,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miaozaiye/webwaving/1204cleancsv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/1204cat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79357797">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.5/lib/python/site-packages/stdpackage/picture.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -753,13 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stdrandom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -886,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,9 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#36#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,14 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stddraw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -948,22 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/20180209_timesort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miaozaiye/solutionforfx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miaozaiye/article">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -982,10 +931,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/miaozaiye/frequentcount.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41821247">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="e#92#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/solutionforfx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/20180209_timesort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stddraw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4074075">
+          <caret line="384" column="7" selection-start-line="384" selection-start-column="7" selection-end-line="384" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/stdpackage1/stdrandom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.296296">
+          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/nodequene.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miaozaiye/MM1queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7013575">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+          <folding>
+            <element signature="e#154#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
