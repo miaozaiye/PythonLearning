@@ -52,7 +52,7 @@ class Note():
         print(samples)
         for i in range(0,n-100,100):
             stddraw.line(i/500,samples[i],(i+100)/500,samples[i+100])
-        stddraw.show(self.f*1000)
+        stddraw.show()
         stdaudio.playSample(samples)
         print('play')
         stdaudio.wait()
